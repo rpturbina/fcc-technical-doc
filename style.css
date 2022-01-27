@@ -31,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    -moz-column-gap: 0.5rem;
     column-gap: 0.5rem;
     letter-spacing: 1px;
     color: white;
@@ -74,6 +75,8 @@ body {
     font-size: medium;
     text-decoration: none;
     color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 1.5rem auto;
     opacity: 0.5;
@@ -87,7 +90,6 @@ body {
 
 /* Main Style */
 .main {
-    /* margin-top: auto; */
     padding-bottom: 6rem;
 }
 
@@ -101,6 +103,7 @@ body {
     font-size: x-large;
     padding: 1rem 0;
     border-bottom: 2px solid;
+    position: -webkit-sticky;
     position: sticky;
     top: -1px;
     background-color: #fff;
@@ -148,6 +151,8 @@ body {
     }
 
     .nav__header {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
