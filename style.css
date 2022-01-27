@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dotted black; */
+    font-family: 'Fira Sans', sans-serif;
+    color: #4d4e53;
+}
+
+code {
+    font-family: consolas, monospace;
+}
+
+html {
+    font-size: 10px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    background-color: #254F72;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 29rem;
+    width: 30rem;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 8px 0px 15px 0px;
+}
+
+nav header {
+    color: white;
+    padding: 2rem;
+    font-size: 2.4rem;
+    box-shadow: rgba(0, 0, 0, 0.5) -4px 0px 15px 0px;
+}
+
+nav ul {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 90%;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+nav ul::-webkit-scrollbar {
+    display: none;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* border-bottom: 1px solid black; */
+}
+
+nav ul li a {
+    display: block;
+    padding: 1.2rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b1c7da91;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 30rem;
+    padding: 3rem;
+}
+
+.main-section {
+    margin-bottom: 1.5rem;
+}
+
+.main-section header {
+    color: black;
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+}
+
+.main-section article {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.main-section article pre {
+    border-left: 6px solid #005282;
+    font-weight: 500;
+    background-color: #eee;
+    margin: 1.5rem;
+}
