@@ -16,14 +16,20 @@ window.addEventListener("scroll", function () {
         let scrollTop =
             window.pageYOffset || document.documentElement.scrollTop;
         //This line will get the location on scroll
+        console.log(scrollTop);
 
         if (scrollTop > lastScrollTop) {
             //if it will be greater than the previous
             navbar.style.top = "-65px";
+            // disableDropdown();
             //set the value to the negetive of height of navbar
         } else {
             navbar.style.top = "0";
         }
+
+        // if (scrollTop > 576) {
+        //     disableDropdown();
+        // }
 
         lastScrollTop = scrollTop; //New Position Stored
     }
@@ -41,10 +47,10 @@ const disableDropdown = () => {
     dropDown = null;
 };
 
-// const toTop = () => {
-//     document.body.scrollTop = 0; // For Safari
-//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// };
+const toTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera\
+};
 
 navbar.addEventListener("click", () => {
     let vw = Math.max(
@@ -55,6 +61,7 @@ navbar.addEventListener("click", () => {
         if (dropDown === "enable") {
             disableDropdown();
         } else if (dropDown === null) {
+            toTop();
             enableDropdown();
         }
     }
