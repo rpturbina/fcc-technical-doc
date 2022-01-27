@@ -21,15 +21,14 @@ window.addEventListener("scroll", function () {
         if (scrollTop > lastScrollTop) {
             //if it will be greater than the previous
             navbar.style.top = "-65px";
-            // disableDropdown();
             //set the value to the negetive of height of navbar
         } else {
             navbar.style.top = "0";
         }
 
-        // if (scrollTop > 576) {
-        //     disableDropdown();
-        // }
+        if (lastScrollTop > 500) {
+            disableDropdown();
+        }
 
         lastScrollTop = scrollTop; //New Position Stored
     }
