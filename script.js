@@ -26,10 +26,6 @@ window.addEventListener("scroll", function () {
             navbar.style.top = "0";
         }
 
-        if (lastScrollTop > 500) {
-            disableDropdown();
-        }
-
         lastScrollTop = scrollTop; //New Position Stored
     }
 });
