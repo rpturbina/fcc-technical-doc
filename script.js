@@ -18,19 +18,21 @@ window.addEventListener("scroll", function () {
         //This line will get the location on scroll
         console.log(scrollTop);
 
+        // if (lastScrollTop < 70 && dropDown !== "enable") {
+        //     enableDropdown();
+        //     console.log("Enable");
+        // }
+        // if (lastScrollTop > 70 && dropDown !== null) {
+        //     disableDropdown();
+        //     console.log("Disable");
+        // }
         if (scrollTop > lastScrollTop) {
             //if it will be greater than the previous
             navbar.style.top = "-65px";
-            // disableDropdown();
             //set the value to the negetive of height of navbar
         } else {
             navbar.style.top = "0";
         }
-
-        // if (scrollTop > 576) {
-        //     disableDropdown();
-        // }
-
         lastScrollTop = scrollTop; //New Position Stored
     }
 });
